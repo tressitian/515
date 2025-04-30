@@ -242,7 +242,7 @@ The prototyping lab has pre-built a board with battery, MCU, switch, and sensor 
 
 ## Deliverables
 
-Please submit all deliverables listed below as a link to your GitHub repo. A reference structure is provided below for your reference:
+Please submit all deliverables listed below as a link to your GitHub repo. In addition, submit your report (pdf format) on Canvas. Please make your report self-contained. An example structure of GitHub repo is provided below for your reference:
 
 ```
 TECHIN515-magic-wand/
