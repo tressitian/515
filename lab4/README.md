@@ -216,31 +216,57 @@ Prediction: [gesture_name] (confidence_percentage%)
 4. Choose your ML block in the side bar.
    - Tune the number of training epochs, learning rate, and neural network architecture until you are satisfied with the learning performance.
    - Report the learning performance, your choices of hyper-parameters, and architecture.
-5. Use "Live classification" and "Model testing" in sidebar to test your model performance.
+5. Use "Live classification" and "Model testing" in sidebar to test your model performance. Please clearly document all metrics being used, e.g., accuracy, TP, FP, F1, etc.
 6. Choose "Deployment" tab in sidebar.
    - Find Arduino Library in the search bar
    - Check Quantized (Int8) box, build the model and download it.
+
+7. **Discussion:** Give at least two potential strategies to further enhance your model performance.
 
 ### Part 3: ESP32 Implementation
 
 1. Deploy the model to your ESP32 and use `wand.ino` to test its performance with real-time gestures. **Note**: You need to rename header file (Line 18) accordingly.
 2. Repeat your testing for a few times, and use appropriate metrics to document your wand's performance.
-3. Modify the provided `wand.ino` code: Implement a button-triggered inference: ESP32 predicts the gesture once the button is pressed.
+3. Modify the provided `wand.ino` code: Implement a button-triggered inference rather than typing 'o' in seriel monitor: ESP32 predicts the gesture once the button is pressed.
 4. Test your code to ensure your wand functions.
-5. Create a demo video showing your implementation.
+5. Create a demo video showing your wand.
 
 ### Part 4: Battery and Enclosure
 
+The prototyping lab has pre-built a board with battery, MCU, switch, and sensor for your uses. Check it out with the instructional team.
+
 1. Power your ESP32 using a battery rather than USB cable.
 2. Use appropriate enclosure for your wand.
-3. The prototyping lab has pre-built a board with battery, MCU, swithc, and sensor for your uses. Check it out with the instructional team.
 
 ![Image of Pre-Built Board](assets/board.png)
 
 ## Deliverables
 
+Please submit all deliverables listed below as a link to your GitHub repo. A reference structure is provided below for your reference:
+
+```
+TECHIN515-magic-wand/
+├── src/
+│   ├── sketches/               # Sketches with comments and Edge Impulse exports
+│   ├── python-scripts/         # Python scripts for data collection
+│   └── dataset/                # Collected dataset
+│
+├── docs/
+│   ├── report.pdf              # Final report in PDF format
+|
+├── media/
+│   └── demo.mp4                # Link or file for the demo video
+│
+├── enclosure/             # CAD/STL files or images of the final enclosure
+│   ├── final-enclosure-images/
+│   └── notes.md                # Description of materials, design decisions, and battery
+│
+├── README.md              # Setup instructions, how to run, install dependencies, etc.
+└── .gitignore             # Ignore unnecessary files (e.g., __pycache__, temp data)
+```
+
 1. Code and Documentation:
-   - All Arduino sketches with comments
+   - All sketches with comments
    - Python scripts for data collection
    - Your dataset
    - Edge Impulse project export
