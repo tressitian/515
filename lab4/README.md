@@ -205,10 +205,14 @@ Prediction: [gesture_name] (confidence_percentage%)
    - Click on "Impulse Design" tab of the sidebar and create a new impulse
      - Depending on your MCU, choose target device accordingly, e.g., "Espressif ESP-EYE (ESP32 240MHz)"
      - Leave other fields as deafult
-   - In the data block, use the default setup.
+   - In the data block, try out different parameter values for time size and stride.
    - Add a processing block. Read through the available options and pick one for your impulse. Justify your option.
    - Add a learning block. Read through the available options and pick one for your impulse. Justify your option.
    - Save your impulse.
+   - Discussion: Discuss the effect of window size. Consider
+     - the number of samples generated
+     - the number of neurons in your input layer of neural network
+     - effectiveness when capturing slow-changing patterns
 
 3. Choose your DSP block in the sidebar.
    - Tune the hyperparameters and visualize the generated features until you are satisfied with the features.
