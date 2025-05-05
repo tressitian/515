@@ -209,7 +209,7 @@ Prediction: [gesture_name] (confidence_percentage%)
    - Add a processing block. Read through the available options and pick one for your impulse. Justify your option.
    - Add a learning block. Read through the available options and pick one for your impulse. Justify your option.
    - Save your impulse.
-   - Discussion: Discuss the effect of window size. Consider
+   - **Discussion**: Discuss the effect of window size. Consider
      - the number of samples generated
      - the number of neurons in your input layer of neural network
      - effectiveness when capturing slow-changing patterns
