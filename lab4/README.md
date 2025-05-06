@@ -29,6 +29,7 @@ By completing this lab, students will:
 
 - ESP32 development board
 - MPU6050 sensor
+- LED (Check with Prototyping Lab for options of LED)
 - Jumper wires for connections
 - Breadboard for quick prototyping
 - Battery and enclosure for creating your wand
@@ -87,7 +88,7 @@ Connect the MPU6050 to your ESP32:
    pip install -r requirements.txt
    ```
 
-3. Upload `gesture_capture.ino` to your ESP32
+3. Upload `gesture_capture.ino` to your ESP32.
 4. Run the Python script to collect gesture data:
    
    ```bash
@@ -132,7 +133,7 @@ The gesture data is stored in CSV format with four columns:
 - y: Y-axis acceleration (m/s²)
 - z: Z-axis acceleration (m/s²)
 
-Each capture contains approximately 100 samples (1 second at 100Hz).
+Each capture contains approximately 100 samples (1 second at 100Hz). **Modify the capture time for your case. The use of 1 second is for demo purpose only.**
 
 ## Wand Inference System
 
